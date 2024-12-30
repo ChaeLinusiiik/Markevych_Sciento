@@ -1,0 +1,71 @@
+Sciento/
+├── db.sqlite3
+├── manage.py
+├── Sciento/
+│   ├── __init__.py
+│   ├── settings.py
+│   ├── urls.py
+│   ├── wsgi.py
+│   └── asgi.py
+├── static/       # Директорія зі статичними файлами
+│   ├── __init__.py
+│   ├── admin.py
+│   ├── apps.py
+│   ├── migrations/
+│   ├── models.py
+│   ├── tests.py
+│   └── views.py
+├── core/          # Додаток методів, які буде використовувати Система
+│   ├── __pycache__/
+│   ├── migrations/
+│   ├── __init__.py
+│   ├── admin.py
+│   ├── apps.py
+│   ├── models.py
+│   ├── urls.py
+│   ├── tests.py
+│   └── views.py
+├── users/          # Додаток для керування користувачами
+│   ├── __pycache__/
+│   ├── migrations/
+│   ├── templates/
+│   ├── __init__.py
+│   ├── admin.py
+│   ├── apps.py
+│   ├── models.py
+│   ├── tests.py
+│   ├── urls.py
+│   └── views.py
+├── payments/          # Додаток для проведення платежів і їх керування
+│   ├── __pycache__/
+│   ├── migrations/
+│   ├── templates/
+│   ├── __init__.py
+│   ├── admin.py
+│   ├── apps.py
+│   ├── models.py
+│   ├── urls.py
+│   ├── tests.py
+│   └── views.py
+├── courses/          # Додаток для керування курсами і їх наповненням
+│   ├── __pycache__/
+│   ├── migrations/
+│   ├── templates/
+│   ├── __init__.py
+│   ├── admin.py
+│   ├── apps.py
+│   ├── models.py
+│   ├── urls.py
+│   ├── tests.py
+│   └── views.py
+├── base_sessions/          # Додаток для створення та керування сесіями
+│   ├── __pycache__/
+│   ├── migrations/
+│   ├── templates/
+│   ├── __init__.py
+│   ├── admin.py
+│   ├── apps.py
+│   ├── models.py
+│   ├── urls.py
+│   ├── tests.py
+│   └── views.py

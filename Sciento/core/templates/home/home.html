@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Activity - Sciento</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f8f0;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #9ebe9e;
+            padding: 10px 20px;
+            color: white;
+            position: fixed;
+            width: 100%;
+            z-index: 3;
+            top: 0
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        header .balance {
+            font-size: 16px;
+        }
+
+        .sidebar {
+            background-color: #d1e7d1;
+            padding: 20px;
+            width: 200px;
+            height: 100vh;
+            position: fixed;
+            top: 0;
+            left: 0;
+            overflow: hidden;
+            z-index: 1;
+        }
+
+        .sidebar ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .sidebar ul li {
+            margin-bottom: 20px;
+        }
+
+        .sidebar ul li a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+        }
+
+        .content {
+            margin-left: 220px;
+            padding: 20px;
+            margin-top: 130px;
+        }
+
+        .section-title {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        .activity-section {
+            display: flex;
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+
+        .chart-container {
+            flex: 2;
+            background-color: white;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .result-container {
+            flex: 1;
+            background-color: #9ebe9e;
+            border-radius: 8px;
+            padding: 20px;
+            color: white;
+            text-align: center;
+            font-size: 18px;
+        }
+
+        .result-container .hours {
+            font-size: 36px;
+            font-weight: bold;
+        }
+
+        .lessons-section {
+            display: flex;
+            gap: 20px;
+        }
+
+        .lesson-card {
+            flex: 1;
+            background-color: #d1e7d1;
+            border-radius: 8px;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .lesson-card h3 {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+
+        .lesson-card p {
+            margin: 5px 0;
+            font-size: 14px;
+            color: #333;
+        }
+
+        .lesson-card .price {
+            font-size: 16px;
+            color: #007700;
+            font-weight: bold;
+        }
+
+        .lesson-card button {
+            background-color: #9ebe9e;
+            color: white;
+            border: none;
+            padding: 5px 10px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Sciento</h1>
+        <div class="balance">$100.00 <button>Log out</button></div>
+    </header>
+
+    <div class="sidebar">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Schedule</a></li>
+            <li><a href="#">My tutors</a></li>
+            <li><a href="#">Courses</a></li>
+            <li><a href="#">Chat</a></li>
+        </ul>
+    </div>
+
+    <div class="content">
+        <div class="section-title">Let's check our activity!</div>
+
+        <div class="activity-section">
+            <div class="chart-container">
+                <img src="https://via.placeholder.com/300x200" alt="Activity Chart">
+                <p>Disciplines: Computer Science, Spanish</p>
+            </div>
+            <div class="result-container">
+                <p>Great result!</p>
+                <p>This month you have been learning</p>
+                <p class="hours">36,5 h.</p>
+                <p>Total: 102,4 h.</p>
+            </div>
+        </div>
+
+        <div class="section-title">Next lesson:</div>
+
+        <div class="lessons-section">
+            <div class="lesson-card">
+                <h3>Tue, 24.12.2024</h3>
+                <p>14:00 - Computer Science</p>
+                <p>Barbara O'Hara</p>
+                <p>Zoom</p>
+                <p class="price">$18.50/h</p>
+                <button>Join</button>
+            </div>
+            <div class="lesson-card">
+                <h3>Tue, 24.12.2024</h3>
+                <p>17:30 - Spanish</p>
+                <p>Diego Cortez</p>
+                <p>Teams</p>
+                <p class="price">$14.0/h</p>
+                <button>Join</button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

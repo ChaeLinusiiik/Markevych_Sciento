@@ -1,0 +1,21 @@
+{% extends 'users/users.html' %}
+{% block content %}
+<div class="tutors-container">
+
+    {% if lastest_tutors %}
+    {% for a in lastest_tutors %}
+    {%if a.role != 'tutor'%}pass {%endif%}
+    <div class="tutor-card">
+        <img src="https://via.placeholder.com/150" alt="Tutor">
+        <h3>{{a.first_name}} {{a.last_name}}</h3>
+        <p>{{a.specialization }}</p>
+        <p class="price">${{ a.hourly_rate }}/h</p>
+        <button>View schedule</button>
+    </div>
+    {%endfor%}
+    {% else %}
+    <p>Tutots are not found</p>
+    {% endif%}
+
+</div>
+{%endblock%}

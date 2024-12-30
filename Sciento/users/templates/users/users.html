@@ -1,0 +1,72 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Tutors - Sciento</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'users/styles.css' %}">
+
+</head>
+
+<body>
+    <header>
+        <nav>
+            <h1>Sciento</h1>
+            <div class="balance">$100.00 <button>Log out</button></div>
+        </nav>
+    </header>
+    <div class="sidebar">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Schedule</a></li>
+            <li><a href="#">My tutors</a></li>
+            <li><a href="#">Courses</a></li>
+            <li><a href="#">Chat</a></li>
+        </ul>
+    </div>
+
+    <div class="content">
+        <div class="section-title">My tutors</div>
+        {%block content%}
+
+        {%endblock%}
+        <div class="section-title">Find new specialist</div>
+        <div class="search-bar">
+            <input type="text" placeholder="Search for a tutor...">
+        </div>
+
+        <div class="tutors-container">
+            <div class="tutor-card">
+                <img src="https://via.placeholder.com/150" alt="Tutor">
+                <h3>Barbara O'Hara</h3>
+                <p>Computer Science<br>Programming</p>
+                <p class="price">$20.50/h</p>
+                <button>View schedule</button>
+            </div>
+            <div class="tutor-card">
+                <img src="https://via.placeholder.com/150" alt="Tutor">
+                <h3>Barbara O'Hara</h3>
+                <p>Math, Algebra</p>
+                <p class="price">$14.50/h</p>
+                <button>View schedule</button>
+            </div>
+            <div class="tutor-card">
+                <img src="https://via.placeholder.com/150" alt="Tutor">
+                <h3>Diego Cortez</h3>
+                <p>Spanish, Literature</p>
+                <p class="price">$17.00/h</p>
+                <button>View schedule</button>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>

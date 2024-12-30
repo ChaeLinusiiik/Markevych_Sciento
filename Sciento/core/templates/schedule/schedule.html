@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sciento - Schedule</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #e9f7ec;
+            color: #2e4b36;
+        }
+
+        header {
+            background-color: #93c49f;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+        }
+
+        header h1 {
+            font-size: 24px;
+            margin: 0;
+            color: #2e4b36;
+        }
+
+        header .account {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .account button {
+            padding: 5px 10px;
+            background-color: #dff5e3;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .sidebar {
+            width: 200px;
+            background-color: #d7ecd7;
+            height: 100vh;
+            position: fixed;
+            top: 0;
+            left: 0;
+            padding: 20px;
+            box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .sidebar ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .sidebar ul li {
+            margin: 20px 0;
+        }
+
+        .sidebar ul li a {
+            text-decoration: none;
+            color: #2e4b36;
+            font-size: 18px;
+            display: block;
+            padding: 5px 10px;
+            border-radius: 5px;
+        }
+
+        .sidebar ul li a:hover {
+            background-color: #cbe4cd;
+        }
+
+        main {
+            margin-left: 220px;
+            padding: 20px;
+        }
+
+        .schedule {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        .day-card {
+            background-color: #fdfbf6;
+            border: 1px solid #c3d3c3;
+            border-radius: 10px;
+            padding: 15px;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .day-card h3 {
+            margin: 0;
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+
+        .day-card .event {
+            margin: 10px 0;
+        }
+
+        .day-card .event span {
+            display: block;
+            font-size: 14px;
+        }
+
+        .day-card .event span strong {
+            color: #2e4b36;
+        }
+
+        .dropdown {
+            float: right;
+        }
+
+        .dropdown select {
+            padding: 5px 10px;
+            border-radius: 5px;
+            border: 1px solid #c3d3c3;
+        }
+
+        .footer-wave {
+            position: relative;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Sciento</h1>
+        <div class="account">
+            <span>$100.00</span>
+            <button>Log out</button>
+        </div>
+    </header>
+
+    <div class="sidebar">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Schedule</a></li>
+            <li><a href="#">My tutors</a></li>
+            <li><a href="#">Courses</a></li>
+            <li><a href="#">Chat</a></li>
+        </ul>
+    </div>
+
+    <main>
+        <div class="header">
+            <h2>Manage your time!</h2>
+            <div class="dropdown">
+                <select>
+                    <option>Week</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="schedule">
+            <div class="day-card">
+                <h3>Monday</h3>
+                <div class="event">
+                    <span>🌙</span>
+                </div>
+            </div>
+            <div class="day-card">
+                <h3>Tuesday</h3>
+                <div class="event">
+                    <span><strong>14:00</strong> | Computer science with Barbara O'Hara - Zoom</span>
+                    <span><strong>17:30</strong> | Spanish with Diego Cortez - Teams</span>
+                </div>
+            </div>
+            <div class="day-card">
+                <h3>Wednesday</h3>
+                <div class="event">
+                    <span><strong>15:00</strong> | Math with Kamisato Ayaka - Zoom</span>
+                </div>
+            </div>
+            <div class="day-card">
+                <h3>Thursday</h3>
+                <div class="event">
+                    <span>🌙</span>
+                </div>
+            </div>
+            <div class="day-card">
+                <h3>Saturday</h3>
+                <div class="event">
+                    <span>🌙</span>
+                </div>
+            </div>
+            <div class="day-card">
+                <h3>Sunday</h3>
+                <div class="event">
+                    <span>🌙</span>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
